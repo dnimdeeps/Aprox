@@ -4,7 +4,8 @@ Peer-to-peer BTC/USD leveraged perpetuals on Arc Mainnet.
 
 Trade directly against other users — no liquidity pool, no protocol reserve. Collateral is locked in a smart contract and settled at real BTC/USD price. Every action is gasless: no wallet extension, no gas token, just a passkey (fingerprint or Face ID).
 
-**Live app:** https://classy-frangipane-e74823.netlify.app
+**Live app (mainet):** https://classy-frangipane-e74823.netlify.app
+**Live app (testnet):** https://resilient-tanuki-ce4499.netlify.app/
 
 ---
 
