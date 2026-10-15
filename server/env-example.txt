@@ -1,0 +1,29 @@
+# Aprox Operator Server environment variables
+# Copy this file to server/.env and fill in values
+# NEVER commit server/.env to version control
+
+# Operator wallet private key (signs MockPriceFeed.updatePrice() txs)
+# This is a DIFFERENT key from the contract owner
+OPERATOR_PRIVATE_KEY=0x...
+
+# Gateway Wallet address that receives x402 nanopayments
+OPERATOR_GATEWAY_ADDRESS=0x...
+
+# Deployed contract addresses
+MOCK_PRICE_FEED_ADDRESS=0xa3c98bef3e38b7df28d65fd16c50f156b7601017
+APROX_PERP_ADDRESS=0x37aa0c15328afb8a16741f4328fd21d4f012e169
+
+# Optional: a funded buyer wallet for the real x402 payment demo
+# Without this, the NanopaymentFeed shows labelled simulation events
+# With this, each row in the feed is a real on-chain Gateway payment
+# Fund this address with testnet USDC, then deposit into Gateway:
+#   cast send <USDC_ADDRESS> "approve(address,uint256)" <GATEWAY_WALLET> <AMOUNT> --private-key $BUYER_PRIVATE_KEY --rpc-url https://rpc.testnet.arc.io
+#   cast send <GATEWAY_WALLET> "depositFor(address,uint256)" $BUYER_ADDRESS <AMOUNT> --private-key $BUYER_PRIVATE_KEY --rpc-url https://rpc.testnet.arc.io
+BUYER_PRIVATE_KEY=
+
+# Server port
+PORT=3001
+
+
+
+

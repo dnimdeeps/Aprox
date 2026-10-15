@@ -1,0 +1,31 @@
+# Environment variables — never commit real keys
+.env
+.env.local
+.env.*.local
+server/.env
+
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Build output
+dist/
+build/
+
+# Foundry build artifacts
+contracts/out/
+contracts/cache/
+contracts/.compass-verify/
+
+# Arc Studio internal logs & plans
+arc-studio-plans/
+console.jsonl
+traces.jsonl
+.agents/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

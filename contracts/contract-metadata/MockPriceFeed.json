@@ -1,0 +1,295 @@
+{
+  "contractAddress": "0xa3c98bef3e38b7df28d65fd16c50f156b7601017",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/MockPriceFeed.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/MockPriceFeed.sol/MockPriceFeed.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xa3c98bef3e38b7df28d65fd16c50f156b7601017"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xa3c98bef3e38b7df28d65fd16c50f156b7601017",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xa3c98bef3e38b7df28d65fd16c50f156b7601017",
+      "txHash": "0xfcba36369863d2f34df738d19c2cc5ae49f6060a2b3da0fef18321b0ea0d4b94",
+      "deployedAt": "2026-10-12T15:46:40.356Z"
+    },
+    {
+      "chain": "Arc Testnet",
+      "address": "0xc925d8a96d93bc3e5f043b2e8fc47430662f01ba",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xc925d8a96d93bc3e5f043b2e8fc47430662f01ba",
+      "txHash": "0x63ade521e159bda561873ecba80530ec7ddb22944479911aeb696196137d73b9",
+      "deployedAt": "2026-10-12T15:24:12.762Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_operator",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_initialPrice",
+          "type": "int256",
+          "internalType": "int256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "MAX_PRICE_CHANGE_BPS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "decimals",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8",
+          "internalType": "uint8"
+        }
+      ],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "function",
+      "name": "description",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "function",
+      "name": "latestAnswer",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256",
+          "internalType": "int256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "latestRound",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint80",
+          "internalType": "uint80"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "latestRoundData",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "roundId",
+          "type": "uint80",
+          "internalType": "uint80"
+        },
+        {
+          "name": "answer",
+          "type": "int256",
+          "internalType": "int256"
+        },
+        {
+          "name": "startedAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "updatedAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "answeredInRound",
+          "type": "uint80",
+          "internalType": "uint80"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "latestTimestamp",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "operator",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "setOperator",
+      "inputs": [
+        {
+          "name": "newOperator",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "updatePrice",
+      "inputs": [
+        {
+          "name": "newPrice",
+          "type": "int256",
+          "internalType": "int256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "version",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "event",
+      "name": "OperatorUpdated",
+      "inputs": [
+        {
+          "name": "oldOperator",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOperator",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "PriceUpdated",
+      "inputs": [
+        {
+          "name": "newPrice",
+          "type": "int256",
+          "indexed": true,
+          "internalType": "int256"
+        },
+        {
+          "name": "roundId",
+          "type": "uint80",
+          "indexed": true,
+          "internalType": "uint80"
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "InvalidPrice",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotOperator",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotOwner",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "PriceChangeTooLarge",
+      "inputs": [
+        {
+          "name": "current",
+          "type": "int256",
+          "internalType": "int256"
+        },
+        {
+          "name": "proposed",
+          "type": "int256",
+          "internalType": "int256"
+        }
+      ]
+    }
+  ]
+}

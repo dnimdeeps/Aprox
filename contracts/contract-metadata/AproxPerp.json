@@ -1,0 +1,623 @@
+{
+  "contractAddress": "0x05ba5e35c8db4167611fb9eb76d0ff184381804f",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/AproxPerp.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/AproxPerp.sol/AproxPerp.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x05ba5e35c8db4167611fb9eb76d0ff184381804f"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x05ba5e35c8db4167611fb9eb76d0ff184381804f",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x05ba5e35c8db4167611fb9eb76d0ff184381804f",
+      "txHash": "0x37cc431b35991f0b2a8087be68160c4ac14b635f7f152c5a77a169b36404bac3",
+      "deployedAt": "2026-10-13T00:16:40.050Z"
+    },
+    {
+      "chain": "Arc Testnet",
+      "address": "0x37aa0c15328afb8a16741f4328fd21d4f012e169",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x37aa0c15328afb8a16741f4328fd21d4f012e169",
+      "txHash": "0x6463c396e2d139db67a3cb1d9a295186c53018255457f1ef28a5cd448475f71b",
+      "deployedAt": "2026-10-12T15:46:54.970Z"
+    },
+    {
+      "chain": "Arc Testnet",
+      "address": "0x8ee94f1fee2c41dbab709eb68b099bbf98724843",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x8ee94f1fee2c41dbab709eb68b099bbf98724843",
+      "txHash": "0x8ddc06c8061a49efec51313f2357d55c3743de45424e5b05e4f09e8cc5ce84e7",
+      "deployedAt": "2026-10-12T15:24:22.976Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_usdc",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_priceFeed",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_initialReserve",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "_owner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "KEEPER_REWARD_BPS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "LIQUIDATION_THRESHOLD_BPS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MAX_ORACLE_STALENESS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "addToReserve",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "closePosition",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "deposit",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "freeBalance",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getFreeBalance",
+      "inputs": [
+        {
+          "name": "trader",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getPosition",
+      "inputs": [
+        {
+          "name": "trader",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct AproxPerp.Position",
+          "components": [
+            {
+              "name": "isOpen",
+              "type": "bool",
+              "internalType": "bool"
+            },
+            {
+              "name": "isLong",
+              "type": "bool",
+              "internalType": "bool"
+            },
+            {
+              "name": "leverage",
+              "type": "uint8",
+              "internalType": "uint8"
+            },
+            {
+              "name": "collateral",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "entryPrice",
+              "type": "int256",
+              "internalType": "int256"
+            },
+            {
+              "name": "openedAt",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getReserveBalance",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "liquidate",
+      "inputs": [
+        {
+          "name": "trader",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "liquidityReserve",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "openPosition",
+      "inputs": [
+        {
+          "name": "isLong",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "leverage",
+          "type": "uint8",
+          "internalType": "uint8"
+        },
+        {
+          "name": "collateral",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "positions",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "isOpen",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "isLong",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "leverage",
+          "type": "uint8",
+          "internalType": "uint8"
+        },
+        {
+          "name": "collateral",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "entryPrice",
+          "type": "int256",
+          "internalType": "int256"
+        },
+        {
+          "name": "openedAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "priceFeed",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract AggregatorV3Interface"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "usdc",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IERC20"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Deposited",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Liquidated",
+      "inputs": [
+        {
+          "name": "trader",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "keeper",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "keeperReward",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "PositionClosed",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "pnl",
+          "type": "int256",
+          "indexed": false,
+          "internalType": "int256"
+        },
+        {
+          "name": "payout",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "exitPrice",
+          "type": "int256",
+          "indexed": false,
+          "internalType": "int256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "PositionOpened",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "isLong",
+          "type": "bool",
+          "indexed": false,
+          "internalType": "bool"
+        },
+        {
+          "name": "leverage",
+          "type": "uint8",
+          "indexed": false,
+          "internalType": "uint8"
+        },
+        {
+          "name": "collateral",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "entryPrice",
+          "type": "int256",
+          "indexed": false,
+          "internalType": "int256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "ReserveAdded",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "newTotal",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Withdrawn",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "InsufficientBalance",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InsufficientReserve",
+      "inputs": [
+        {
+          "name": "required",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "available",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "InvalidLeverage",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidPrice",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NoOpenPosition",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotOwner",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "PositionAlreadyOpen",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "PositionHealthy",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ReentrancyGuardReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "StalePrice",
+      "inputs": [
+        {
+          "name": "updatedAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "blockTimestamp",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "ZeroAddress",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ZeroAmount",
+      "inputs": []
+    }
+  ]
+}
